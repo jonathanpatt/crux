@@ -43,6 +43,17 @@ class View
     }
 
     /**
+     * Load an element by name, process it, and return it
+     *
+     * @return string
+     * @author Jonathan Patt <jonathanpatt@gmail.com>
+     */
+    private function element($elementName)
+    {
+        return $this->loadTemplate('views/elements/' . $elementName . '.php');
+    }
+
+    /**
      * Load a view template at the specified path, process it, and return it
      *
      * @return string
