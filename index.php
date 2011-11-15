@@ -9,19 +9,23 @@
  * @author Jonathan Patt <jonathanpatt@gmail.com>
  */
 
-if (is_front_page && is_home()) {
-    // Main blog page
+define('THEME_ROOT', __DIR__);
 
+require THEME_ROOT . '/lib/Request.php';
+
+if (is_home()) {
+    // Main blog page
+    Request::controller('blog');
 } else if (is_front_page() && is_page()) {
     // Main static page
-
+    Request::controller('page');
 } else if (is_single()) {
     // Single post
-
+    Request::controller('post');
 } else if (is_page()) {
     // Single page
-
+    Request::controller('page');
 } else if (is_archive()) {
     // Archive page
-
+    Request::controller('archive');
 }
