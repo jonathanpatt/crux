@@ -1,1 +1,0 @@
-Placeholder Archive template.
