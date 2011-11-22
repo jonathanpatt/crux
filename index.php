@@ -36,4 +36,7 @@ if (is_home()) {
 } else if (is_archive()) {
     // Archive page
     Request::controller('archive');
+} else if (is_search()) {
+    // Search page
+    Request::controller('search');
 }
