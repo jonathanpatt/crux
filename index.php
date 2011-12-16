@@ -7,4 +7,4 @@
 
 get_template_part('lib/Bootstrap');
 
-Bootstrap::dispatch();
+Dispatch::route();

@@ -10,34 +10,4 @@ if (!is_child_theme()) {
 
 define('THEME_ROOT', dirname(dirname(__FILE__)));
 
-require THEME_ROOT . '/lib/Request.php';
-
-class Bootstrap
-{
-    static public function dispatch($controller = null)
-    {
-        if ($controller) {
-            Request::controller($controller);
-        } else {
-            if (is_home()) {
-                // Main blog page
-                Request::controller('blog');
-            } else if (is_front_page() && is_page()) {
-                // Main static page
-                Request::controller('page');
-            } else if (is_single()) {
-                // Single post
-                Request::controller('post');
-            } else if (is_page()) {
-                // Single page
-                Request::controller('page');
-            } else if (is_archive()) {
-                // Archive page
-                Request::controller('archive');
-            } else if (is_search()) {
-                // Search page
-                Request::controller('search');
-            }
-        }
-    }
-}
+require THEME_ROOT . '/lib/Dispatch.php';
