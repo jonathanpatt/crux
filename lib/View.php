@@ -4,7 +4,6 @@
  *
  * @package    WordPress
  * @subpackage Crux
- * @author     Jonathan Patt <jonathanpatt@gmail.com>
  */
 class View
 {
@@ -18,7 +17,6 @@ class View
      * @param string $layout   Optional name of the layout to wrap the view with
      *
      * @return void
-     * @author Jonathan Patt <jonathanpatt@gmail.com>
      */
     public function render($viewName, $viewVars = array(), $layout = 'default')
     {
@@ -35,7 +33,6 @@ class View
      * This is used by the layout template to load its content.
      *
      * @return string
-     * @author Jonathan Patt <jonathanpatt@gmail.com>
      */
     private function content()
     {
@@ -46,7 +43,6 @@ class View
      * Load an element by name, process it, and return it
      *
      * @return string
-     * @author Jonathan Patt <jonathanpatt@gmail.com>
      */
     private function element($elementName)
     {
@@ -57,7 +53,6 @@ class View
      * Load a view template at the specified path, process it, and return it
      *
      * @return string
-     * @author Jonathan Patt <jonathanpatt@gmail.com>
      */
     private function loadTemplate($__path)
     {
