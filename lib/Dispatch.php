@@ -1,5 +1,5 @@
 <?php
-require THEME_ROOT . '/lib/Request.php';
+get_template_part('lib/Request');
 
 class Dispatch
 {

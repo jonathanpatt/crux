@@ -1,7 +1,7 @@
 <?php
 
-require THEME_ROOT . '/lib/Inflector.php';
-require THEME_ROOT . '/lib/View.php';
+get_template_part('lib/Inflector');
+get_template_part('lib/View');
 
 /**
  * Handle requests for various parts of the blog and call the appropriate
