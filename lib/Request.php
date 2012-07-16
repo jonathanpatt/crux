@@ -20,7 +20,7 @@ class Request
         $controllerClass = new $controllerClassName;
 
         // Call controller's show method, saving any returned data
-        $viewVars = $controllerClass->show();
+        $viewVars = $controllerClass->show() ?: array();
 
         // Create and render view
         $view = new View;

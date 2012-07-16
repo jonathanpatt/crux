@@ -8,6 +8,7 @@
 class View
 {
     private $viewName;
+    private $viewVars = array();
 
     /**
      * Render a specified view
@@ -18,10 +19,10 @@ class View
      *
      * @return void
      */
-    public function render($viewName, $viewVars = array(), $layout = 'default')
+    public function render($viewName, Array $viewVars = array(), $layout = 'default')
     {
         $this->viewName = $viewName;
-        $this->viewVars = $viewVars;
+        $this->viewVars += $viewVars;
 
         // Load and output layout template
         echo $this->loadTemplate('views/layouts/' . $layout . '.php');
