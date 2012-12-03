@@ -1,20 +1,14 @@
 # crux
 
-A WordPress base theme done right.
+A base WordPress theme that acts as a well-structured starting point for
+developing your own child theme.
 
 ## About
 
 Crux is a WordPress base theme built to allow separation of markup and logic in your
-child theme files. **At this point it's in extremely early development and is
-*absolutely* not in a state for use in a project.**
-
-## Contributing
-
-At this point, any contribution attempts will probably be rejected just because
-I want to establish certain standards and behavior at this extremely early
-stage. In the future, contributions will absolutely be accepted and I'll
-welcome pull requests. At that point, please feel free to add yourself as an
-author in the docblock of any class or method you make changes to.
+child theme files. It's still fairly early in its development, and there are
+a lot of interesting new ideas to be added to it, but feel free to give it
+a spin and see how you like it.
 
 ## License
 

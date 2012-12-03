@@ -1,13 +1,11 @@
 <?php
 
-require THEME_ROOT . '/lib/Inflector.php';
-require THEME_ROOT . '/lib/View.php';
+get_template_part('lib/Inflector');
+get_template_part('lib/View');
 
 /**
  * Handle requests for various parts of the blog and call the appropriate
  * controller, followed by outputting that controller's view
- *
- * @author Jonathan Patt <jonathanpatt@gmail.com>
  */
 class Request
 {
@@ -22,7 +20,7 @@ class Request
         $controllerClass = new $controllerClassName;
 
         // Call controller's show method, saving any returned data
-        $viewVars = $controllerClass->show();
+        $viewVars = $controllerClass->show() ?: array();
 
         // Create and render view
         $view = new View;

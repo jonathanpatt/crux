@@ -1,5 +1,5 @@
 <?php
-require THEME_ROOT . '/lib/Request.php';
+get_template_part('lib/Request');
 
 class Dispatch
 {
@@ -25,7 +25,6 @@ class Dispatch
      *                           specified by name here.
      *
      * @return void
-     * @author Jonathan Patt <jonathanpatt@gmail.com>
      **/
     static public function route($controller = null)
     {

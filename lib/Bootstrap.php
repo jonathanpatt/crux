@@ -8,6 +8,4 @@ if (!is_child_theme()) {
     wp_die('<b>Error:</b> The crux theme framework can only be used via a child theme.');
 }
 
-define('THEME_ROOT', dirname(dirname(__FILE__)));
-
-require THEME_ROOT . '/lib/Dispatch.php';
+get_template_part('lib/Dispatch');
